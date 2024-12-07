@@ -13,6 +13,5 @@ This project was made with a responsive design so that it can be displayed on di
 -TripleTen Cheat Sheets
 -Chat GPT
 
-## Deployment
-
-[- Deployment Link](https://kivy21.github.io/se_project_spots/) 
+## Deployment Link
+https://kivy21.github.io/se_project_spots/
