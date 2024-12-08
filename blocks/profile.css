@@ -1,5 +1,6 @@
 .profile {
     display: flex;
+    max-width: 1280px;
     padding: 34px 0 20px;
     border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
@@ -21,24 +22,22 @@
     margin: 0 0 12px;
     font-weight: 500;
     font-size: 32px;
-    font-family: "Poppins" Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 1;
     color: #212121;
     max-width: 420px;
-    height: 32px;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    
+
 }
 
 .profile__description {
     margin: 0;
-    max-width: 97px;
-    height: 16px;
-    font-family: "Poppins" Arial, Helvetica, sans-serif;
+    max-width: 420px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
@@ -57,22 +56,22 @@
     border: none;
     background: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
     display: flex;
     justify-content: flex-start;
     font-weight: 500;
     opacity: 0.7;
     color: #212121;
-    padding: 0; 
+    padding: 0;
 }
 
 .profile__edit-btn:hover {
-color: #212121;
 cursor: pointer;
 opacity: 1;
 }
 
 .profile__pencil {
-    color: #212121;
     margin-right: 8px;
     display: inline-block;
     vertical-align: middle;
@@ -84,6 +83,8 @@ opacity: 1;
     width: 149px;
     height: 52px;
     border-radius: 8px;
+    border: none;
+    line-height: 1;
     padding: 18px 32px;
     background-color: #212121;
     color: #fcf5e5;
@@ -97,13 +98,11 @@ opacity: 1;
 }
 
 .profile__add-btn:hover {
-    color: #fcf5e5;
     cursor: pointer;
     opacity: 0.8;
-    background-color: #212121;
 }
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 320px) {
     .profile {
         flex-direction: column;
         max-width: 288px;
@@ -122,25 +121,12 @@ opacity: 1;
     padding: 6px;
 }
 
-.profile__edit-btn:hover {
-    color: #212121;
-    cursor: pointer;
-    opacity: 1;
-    }
-
 .profile__add-btn {
 margin: auto;
     width: 288px;
     padding: 18px 32px;
     display: flex;
     justify-content: center;
-}
-
-.profile__add-btn:hover {
-    color: #fcf5e5;
-    cursor: pointer;
-    opacity: 0.8;
-    background-color: #212121;
 }
 
 .profile__column {
@@ -150,14 +136,10 @@ margin: auto;
 .profile__description {
     margin: 0 0 32px;
     max-width: 288px;
-    height: 16px;
-    padding: 6px;
+    gap: 6px;
 }
 
 .profile__name {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
     margin: 0 0 6px;
     max-width: 288px;
 }
