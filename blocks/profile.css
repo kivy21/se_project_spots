@@ -142,5 +142,6 @@ margin: auto;
 .profile__name {
     margin: 0 0 6px;
     max-width: 288px;
+    font-size: 20px;
 }
 }

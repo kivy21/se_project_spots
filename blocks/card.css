@@ -1,6 +1,4 @@
-.card {
-    margin-bottom: 12px;
-}
+
 
 .card__image {
     height: 413px;
@@ -8,6 +6,7 @@
     object-fit: cover;
     display: block;
     border-radius: 8px;
+    gap: 8px;
 }
 
 .card__content {
@@ -27,7 +26,7 @@
     text-overflow: ellipsis;
 white-space: nowrap;
 overflow: hidden;
-max-width: ;
+max-width: 350px;
 }
 
 .card__like-btn {
@@ -52,9 +51,8 @@ opacity: 1;
     .card__title {
         width: 200px;
         font-size: 16px;
-        text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+        line-height: 16px;
+
     }
 
 }
