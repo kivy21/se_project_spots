@@ -61,7 +61,7 @@ function openModal() {
   editModal.classList.add("modal_opened");
 }
 function closeModal() {
-  editModal.classList.remove("modal__opened");
+  editModal.classList.remove("modal_opened");
 }
 
 function handleProfileFormSubmit(evt) {
