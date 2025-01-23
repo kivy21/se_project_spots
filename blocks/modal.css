@@ -141,9 +141,13 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 480px) {
   .modal {
     padding: 0 10px;
+  }
+
+  .modal__image {
+    max-width: 288px;
   }
 
   .modal__container {
