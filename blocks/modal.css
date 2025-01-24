@@ -83,7 +83,6 @@
   right: -52.5px;
   position: absolute;
   background-color: transparent;
-  opacity: 1;
 }
 
 .modal__title {
@@ -175,5 +174,10 @@
   .modal__container_type_preview {
     max-width: fit-content;
     padding: 0;
+  }
+
+  .modal__close-btn_type_preview {
+    right: 0;
+    top: -40px;
   }
 }
