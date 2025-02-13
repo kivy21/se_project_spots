@@ -12,7 +12,7 @@ const showInputError = (formElement, inputElement, errorMsg, config) => {
     `#${inputElement.id}-error`
   );
   errorMsgElement.textContent = errorMsg;
-  errorMsgElement.classList.add("form__input_error_active");
+  errorMsgElement.classList.add(config.errorClass);
   inputElement.classList.add(config.inputErrorClass);
 };
 
@@ -48,7 +48,6 @@ const toggleButtonState = (inputList, buttonElement, config) => {
   if (hasInvalidInput(inputList)) {
     disableButton(buttonElement, config);
   } else {
-    buttonElement.classList.remove("button_inactive");
     buttonElement.classList.remove(config.inactiveButtonClass);
     buttonElement.disabled = false;
   }
