@@ -79,7 +79,7 @@ function getCardElement(data) {
   });
 
   cardDeleteBtn.addEventListener("click", (evt) => {
-    cardElement.remove();
+    evt.target.closest(".card").remove();
   });
 
   cardNameEl.textContent = data.name;
@@ -94,8 +94,9 @@ previewCloseButton.addEventListener("click", () => {
 });
 
 function handleEscape(evt) {
-  const activeModal = document.querySelector(".modal_opened");
   if (evt.key === "Escape") {
+    const activeModal = document.querySelector(".modal_opened");
+    closeModal(activeModal);
   }
 }
 
